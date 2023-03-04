@@ -1,0 +1,4 @@
+change interest to category
+convert status to account_status
+give each a unique userid
+add gender
