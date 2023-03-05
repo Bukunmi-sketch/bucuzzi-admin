@@ -68,10 +68,9 @@ if (isset($_GET['read']) && ($_GET['read'] == 'true')) {
                   <th> Action </th>
                   <th>Id</th>
                   
-                  <th>Last Active Day</th>
-                  <th>Last Active Time</th>
+                
                   <th>Registered Date</th>
-                  <th>Time registered</th>
+                
                 </tr>
               </thead>
               <tbody>
@@ -86,8 +85,6 @@ if (isset($_GET['read']) && ($_GET['read'] == 'true')) {
                       </form>                     
                      
                       <td> <?php echo  "{$members['id']}"; ?> </td>
-                      <td> <?php echo  "{$members['LastActiveDate']}"; ?> </td>
-                      <td> <?php echo  "{$members['LastActiveTime']}"; ?> </td>
                       <td> 
                       <div class="each-user" id="eachagent<?php echo  "{$members['id']}" ; ?>">
                            <img src=" <?php echo $agentsignupdirfile; ?><?php echo $members["profileimage"]; ?>" alt=""  class="image"> 
@@ -112,7 +109,7 @@ if (isset($_GET['read']) && ($_GET['read'] == 'true')) {
                     
                     
                       </td>
-                      <td> <?php echo date("H:i a",  strtotime($members['reg_date'])); ?> </td>
+                     
                     </tr>
                   </div>
                 <?php endforeach ?>
