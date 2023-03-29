@@ -55,16 +55,16 @@
             <h3>DASHBOARD OVERVIEW</h3>
            <div class="middle-content">
 
-           <div class="box">
+           <?php 
+                $countUsers=$dashboardInstance->countUsers();
+            ?>
+               <div class="box">
                  <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
                    <div class="boxb">
-                       <h4>AVAILABLE PRODUCTS</h4>
-                       <p></p>
+                       <h4>AVAILABLE UsersS</h4>
+                       <p><?php echo $countUsers ?></p>
                    </div>
                </div>
-
-
-           </div>
            
         
 </div>

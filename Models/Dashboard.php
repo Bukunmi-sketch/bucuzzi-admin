@@ -14,7 +14,7 @@ require '../Includes/db.inc.php';
         }
 
         public function countUsers(){
-          $query="SELECT * FROM products";
+          $query="SELECT * FROM anonyusers";
           $stmt=$this->db->prepare($query);
           $stmt->execute();
           return $stmt->rowCount();
